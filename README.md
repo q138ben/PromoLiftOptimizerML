@@ -11,21 +11,22 @@ Based on the predicted lift and the current promotion frequency, the system will
 
 
 ## Repository Structure
+```bash
 
 PromoLiftOptimizerML/
 ├── data/
-│   ├── historical_promotions.csv    
-│   └── merged_data.csv              
+│   ├── historical_promotions.csv    # Raw historical data
+│   └── merged_data.csv              # Processed dataset with computed metrics
 ├── notebooks/
-│   └── EDA.ipynb                    
+│   └── EDA.ipynb                    # Exploratory analysis
 ├── src/
-│   ├── data_pipeline.py            
-│   ├── model_training.py            
-│   ├── recommendation.py            
-│   └── config.py                   
+│   ├── data_pipeline.py             # Ingestion and preprocessing
+│   ├── model_training.py            # Train model to predict optimal discount and frequency (and lift)
+│   ├── recommendation.py            # Generate recommendations based on model predictions vs. current values
+│   └── config.py                    # Configurations
 ├── dashboard/
-│   └── streamlit_app.py           
+│   └── streamlit_app.py             # Interactive dashboard for recommendations
 ├── tests/
-│   └── test_recommendation.py       
+│   └── test_recommendation.py       # Unit tests for recommendation logic
 └── README.md
 └── app.py
