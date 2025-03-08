@@ -14,17 +14,18 @@ Based on the predicted lift and the current promotion frequency, the system will
 
 PromoLiftOptimizerML/
 ├── data/
-│   ├── historical_promotions.csv    # Raw historical data
-│   └── merged_data.csv              # Processed dataset with computed metrics
+│   ├── historical_promotions.csv    
+│   └── merged_data.csv              
 ├── notebooks/
-│   └── EDA.ipynb                    # Exploratory analysis
+│   └── EDA.ipynb                    
 ├── src/
-│   ├── data_pipeline.py             # Ingestion and preprocessing
-│   ├── model_training.py            # Train model to predict optimal discount and frequency (and lift)
-│   ├── recommendation.py            # Generate recommendations based on model predictions vs. current values
-│   └── config.py                    # Configurations
+│   ├── data_pipeline.py            
+│   ├── model_training.py            
+│   ├── recommendation.py            
+│   └── config.py                   
 ├── dashboard/
-│   └── streamlit_app.py             # Interactive dashboard for recommendations
+│   └── streamlit_app.py           
 ├── tests/
-│   └── test_recommendation.py       # Unit tests for recommendation logic
+│   └── test_recommendation.py       
 └── README.md
+└── app.py
